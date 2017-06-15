@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd $1
+npm run build
+sed -i .bak 's/\/static/static/g' ./build/index.html
+rm -f ./build/index.html.bak

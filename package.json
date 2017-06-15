@@ -1,0 +1,31 @@
+{
+  "name": "serve-create-react-app",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "bin": {
+    "serve-create-react-app": "src/cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JamesKyburz/serve-create-react-app.git"
+  },
+  "scripts": {
+    "missing": "dependency-sync --once"
+  },
+  "dependencies": {
+    "serve": "5.2.2"
+  },
+  "files": [
+    "src"
+  ],
+  "devDependencies": {
+    "dependency-sync": "2.1.0"
+  },
+  "dependency-sync": {
+    "args": [
+      "src/index.js",
+      "--debug"
+    ]
+  },
+  "license": "Apache-2.0"
+}
