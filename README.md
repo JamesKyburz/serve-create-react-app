@@ -27,6 +27,19 @@ supports `process.env.SERVE_USER` and `process.env.PASSWORD` see documentation [
 serve-create-react-app [path-to-react]
 ```
 
+# example Dockerfile
+```dockerfile
+FROM jameskyburz/node:8.0.0-alpine
+
+ENV REACT_APP_BUILD /usr/src/app/src/ui/build
+
+RUN ./node_modules/.bin/serve-create-react-app /usr/src/app/src/ui
+
+USER node
+
+EXPOSE 5000
+```
+
 # license
 
 [Apache License, Version 2.0](LICENSE)
