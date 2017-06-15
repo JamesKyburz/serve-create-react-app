@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # serve-create-react-app
 
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/feross/standard)
