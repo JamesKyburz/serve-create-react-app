@@ -2,5 +2,11 @@
 
 cd $1
 npm run build
-sed -i .bak 's/\/static/static/g' ./build/index.html
+
+if [ "`uname`" == "Darwin" ]; then
+  sed -i .bak 's/\/static/static/g' ./build/index.html
+else
+  sed -i 's/\/static/static/g' ./build/index.html
+fi
+
 rm -f ./build/index.html.bak
