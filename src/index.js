@@ -8,7 +8,7 @@ module.exports = (cookieName) => {
   const baseURL = process.env.REACT_APP_BASE_URL
 
   const uiIgnored = [ '.DS_Store', '.git/', 'node_modules' ]
-  const uiPath = path.join(__dirname, 'ui/build/')
+  const uiPath = path.join(process.cwd(), (process.env.REACT_APP_BUILD || 'ui/build'))
   const uiFlags = { single: true, auth: !!process.env.SERVE_USER }
 
   return (req, res) => {
