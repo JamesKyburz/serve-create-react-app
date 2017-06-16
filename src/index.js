@@ -1,5 +1,4 @@
 const serve = require('serve/lib/server')
-const uiPath = require('./ui-path')
 
 // taken from serve cli!
 process.env.ASSET_DIR = '/' + Math.random().toString(36).substr(2, 10)
