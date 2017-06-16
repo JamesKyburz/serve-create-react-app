@@ -33,7 +33,7 @@ FROM jameskyburz/node:8.0.0-alpine
 
 ENV REACT_APP_BUILD /usr/src/app/src/ui/build
 
-RUN ./node_modules/.bin/serve-create-react-app /usr/src/app/src/ui
+RUN ./node_modules/.bin/serve-create-react-app
 
 USER node
 

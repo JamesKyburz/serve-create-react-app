@@ -1,6 +1,14 @@
 #!/bin/sh
 
-cd $1
+if [ -z "$REACT_APP_BUILD" ]; then
+  echo "You must specify env REACT_APP_BUILD"
+  exit 1
+fi
+
+mkdir -p $REACT_APP_BUILD
+cd $REACT_APP_BUILD
+cd ..
+
 npm install
 npm run build
 
