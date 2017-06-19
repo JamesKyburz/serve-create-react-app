@@ -15,7 +15,7 @@ server
 ```javascript
 process.env.REACT_APP_BUILD=[path to react app build directory]
 const serve = require('serve-create-react-app')('COOKIE_NAME_FOR_BASE_URL')
-// base url set by process.env.REACT_APP_BASE_URL
+// base url set by process.env.PUBLIC_URL
 serve(req, res)
 ```
 
@@ -32,6 +32,7 @@ serve-create-react-app [path-to-react]
 FROM jameskyburz/node:8.0.0-alpine
 
 ENV REACT_APP_BUILD /usr/src/app/src/ui/build
+ENV PUBLIC_URL /
 
 RUN ./node_modules/.bin/serve-create-react-app
 
