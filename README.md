@@ -32,13 +32,18 @@ serve-create-react-app [path-to-react]
 FROM jameskyburz/node:8.0.0-alpine
 
 ENV REACT_APP_BUILD /usr/src/app/src/ui/build
-ENV PUBLIC_URL /
 
 RUN ./node_modules/.bin/serve-create-react-app
 
 USER node
 
 EXPOSE 5000
+```
+
+# example Docker run
+
+```sh
+docker run my-image -e PUBLIC_URL=/foo
 ```
 
 # license

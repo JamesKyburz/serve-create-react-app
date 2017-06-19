@@ -10,4 +10,4 @@ cd $REACT_APP_BUILD
 cd ..
 
 npm install
-npm run build
+PUBLIC_URL=%PUBLIC_URL% npm run build

@@ -13,6 +13,7 @@
     "missing": "dependency-sync --once"
   },
   "dependencies": {
+    "glob": "7.1.2",
     "serve": "5.2.2"
   },
   "files": [
