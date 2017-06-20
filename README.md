@@ -27,6 +27,12 @@ supports `process.env.SERVE_USER` and `process.env.PASSWORD` see documentation [
 serve-create-react-app [path-to-react]
 ```
 
+# usage behind a reverse proxy
+
+Make sure homepage is "." in your react app.
+
+This is documented [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#serving-the-same-build-from-different-paths)
+
 # example Dockerfile
 ```dockerfile
 FROM jameskyburz/node:8.0.0-alpine
