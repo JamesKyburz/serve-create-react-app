@@ -27,6 +27,7 @@ module.exports = (cookieName) => {
     }
     const uiFlags = { single: true, auth: !!process.env.SERVE_USER }
     const overrideUrl = rootUrls.find((x) => req.url.indexOf(x) !== -1)
+    if (req.url.startsWith(baseUrl)) req.url = req.url.slice(baseUrl.length)
     if (overrideUrl) req.url = overrideUrl
     serve(req, res, uiFlags, uiPath, uiIgnored)
   }
