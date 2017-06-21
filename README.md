@@ -27,11 +27,28 @@ supports `process.env.SERVE_USER` and `process.env.PASSWORD` see documentation [
 serve-create-react-app [path-to-react]
 ```
 
-# usage behind a reverse proxy
+# usage when pathname is not root
 
-Make sure homepage is "." in your react app.
+Make sure homepage is "." in your react app's `package.json`.
 
 This is documented [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#serving-the-same-build-from-different-paths)
+
+Then when running set `process.env.PUBLIC_URL`
+
+## buildRelativePaths returns a promise.
+
+You will need to call `serve.buildRelativePaths` when the http is running.
+
+```javascript
+const serve = require('serve-create-react-app')('COOKIE_NAME_FOR_BASE_URL')
+serve.buildRelativePaths()
+```
+
+# usage when pathname is root
+
+Make sure homepage is not added to react app's `package.json`.
+
+Run without setting `process.env.PUBLIC_URL`
 
 # example Dockerfile
 ```dockerfile
