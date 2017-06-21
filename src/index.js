@@ -11,7 +11,6 @@ module.exports = (cookieName) => {
   let rootUrls = []
 
   route.buildRelativePaths = () => {
-    return Promise.reject('oh no')
     return (
       relativePaths(uiPath)
       .then((urls) => { rootUrls = urls })
