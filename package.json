@@ -15,7 +15,7 @@
   "dependencies": {
     "glob": "7.1.2",
     "serve": "5.2.3",
-    "webtouch": "0.6.0"
+    "webtouch": "0.7.0"
   },
   "files": [
     "src"
