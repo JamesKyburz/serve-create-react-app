@@ -10,7 +10,8 @@
     "url": "git://github.com/JamesKyburz/serve-create-react-app.git"
   },
   "scripts": {
-    "missing": "dependency-sync --once"
+    "missing": "dependency-sync --once",
+    "republish": "standard"
   },
   "dependencies": {
     "glob": "7.1.2",
@@ -21,7 +22,8 @@
     "src"
   ],
   "devDependencies": {
-    "dependency-sync": "2.1.0"
+    "dependency-sync": "2.1.0",
+    "standard": "10.0.2"
   },
   "dependency-sync": {
     "args": [
