@@ -1,6 +1,6 @@
 {
   "name": "serve-create-react-app",
-  "version": "4.1.7",
+  "version": "4.1.8",
   "main": "src/index.js",
   "bin": {
     "serve-create-react-app": "src/cli"
