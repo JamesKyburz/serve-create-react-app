@@ -9,7 +9,9 @@ module.exports = (uiPath) => {
       if (err) return reject(err)
       resolve([...new Set(
         urls
-          .map((x) => url.parse(x).pathname)
+          .map((x) => url.parse(x))
+          .filter((x) => x.host.startsWith('localhost'))
+          .map((x) => x.pathname)
           .filter((x) => x !== '/')
           .concat(['/service-worker.js'])
           .concat(
