@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "glob": "7.1.2",
-    "serve": "6.0.6",
+    "serve": "6.4.0",
     "webtouch": "0.7.0"
   },
   "files": [
