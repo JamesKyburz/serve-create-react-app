@@ -2,11 +2,12 @@ const path = require('path')
 const webtouch = require('webtouch')
 const url = require('url')
 
-module.exports = uiPath => {
+module.exports = (uiPath, token) => {
   const credentials = process.env.SERVE_USER
     ? `${process.env.SERVE_USER}:${process.env.SERVE_PASSWORD}@`
     : ''
-  const ep = `http://${credentials}localhost:${process.env.PORT}`
+  const tokenSuffix = token ? `/?token=${token}` : ''
+  const ep = `http://${credentials}localhost:${process.env.PORT}${tokenSuffix}`
   return new Promise((resolve, reject) => {
     webtouch(ep, (err, urls) => {
       if (err) return reject(err)
