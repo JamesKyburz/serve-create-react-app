@@ -14,8 +14,8 @@ module.exports = cookieName => {
   const uiIgnored = ['.DS_Store', '.git/', 'node_modules']
   let rootUrls = []
 
-  route.buildRelativePaths = token => {
-    return relativePaths(uiPath, token).then(urls => {
+  route.buildRelativePaths = (opt = {}) => {
+    return relativePaths(uiPath, opt).then(urls => {
       rootUrls = urls
     })
   }
