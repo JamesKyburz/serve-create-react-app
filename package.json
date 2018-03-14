@@ -23,7 +23,7 @@
   ],
   "devDependencies": {
     "dependency-sync": "2.1.0",
-    "standard": "10.0.3"
+    "standard": "11.0.1"
   },
   "dependency-sync": {
     "args": [
