@@ -22,7 +22,7 @@
     "src"
   ],
   "devDependencies": {
-    "dependency-sync": "2.1.0",
+    "dependency-sync": "2.2.1",
     "standard": "10.0.3"
   },
   "dependency-sync": {
