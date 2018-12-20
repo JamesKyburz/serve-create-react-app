@@ -10,26 +10,15 @@
     "url": "git://github.com/JamesKyburz/serve-create-react-app.git"
   },
   "scripts": {
-    "missing": "dependency-sync --once",
-    "republish": "standard"
+    "missing": "npx dependency-sync ./src/index.js --once --debug",
+    "republish": "npx standard"
   },
   "dependencies": {
-    "glob": "7.1.3",
-    "serve": "6.4.10",
+    "serve": "10.1.1",
     "webtouch": "0.7.0"
   },
   "files": [
     "src"
   ],
-  "devDependencies": {
-    "dependency-sync": "2.1.0",
-    "standard": "10.0.3"
-  },
-  "dependency-sync": {
-    "args": [
-      "src/index.js",
-      "--debug"
-    ]
-  },
   "license": "Apache-2.0"
 }
