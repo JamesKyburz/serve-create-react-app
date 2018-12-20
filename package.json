@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "serve": "10.1.1",
-    "webtouch": "0.7.0"
+    "webtouch": "git+https://github.com/JamesKyburz/webtouch.git#fix/npm-audit"
   },
   "files": [
     "src"
