@@ -14,13 +14,10 @@ server
 
 ```javascript
 process.env.REACT_APP_BUILD=[path to react app build directory]
-const serve = require('serve-create-react-app')('COOKIE_NAME_FOR_BASE_URL')
 // base url set by process.env.PUBLIC_URL
-serve(req, res)
+const serve = require('serve-create-react-app')('COOKIE_NAME_FOR_BASE_URL')
+await serve(req, res)
 ```
-
-# basic auth
-supports `process.env.SERVE_USER` and `process.env.PASSWORD` see documentation [here](https://github.com/zeit/serve#authentication)
 
 # build
 ```sh
@@ -34,15 +31,6 @@ Make sure homepage is "." in your react app's `package.json`.
 This is documented [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#serving-the-same-build-from-different-paths)
 
 Then when running set `process.env.PUBLIC_URL`
-
-## buildRelativePaths returns a promise.
-
-You will need to call `serve.buildRelativePaths` when the http is running.
-
-```javascript
-const serve = require('serve-create-react-app')('COOKIE_NAME_FOR_BASE_URL')
-serve.buildRelativePaths()
-```
 
 # usage when pathname is root
 

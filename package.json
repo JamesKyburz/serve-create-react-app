@@ -14,8 +14,7 @@
     "republish": "npx standard"
   },
   "dependencies": {
-    "serve": "10.1.1",
-    "webtouch": "git+https://github.com/JamesKyburz/webtouch.git#fix/npm-audit"
+    "serve-handler": "5.0.7"
   },
   "files": [
     "src"
