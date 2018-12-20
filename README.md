@@ -4,7 +4,7 @@
 [![downloads](https://img.shields.io/npm/dm/serve-create-react-app.svg)](https://npmjs.org/package/serve-create-react-app)
 [![Greenkeeper badge](https://badges.greenkeeper.io/JamesKyburz/serve-create-react-app.svg)](https://greenkeeper.io/)
 
-serve [create-react-app](https://github.com/facebookincubator/create-react-app) using [serve](https://github.com/zeit/serve) as single page application.
+serve [create-react-app](https://github.com/facebookincubator/create-react-app) using [serve](https://github.com/zeit/serve) as a single page application.
 
 use when you want a backened to your react app.
 
