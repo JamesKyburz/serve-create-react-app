@@ -10,6 +10,7 @@ module.exports = cookieName => (req, res) => {
     res.setHeader('Set-Cookie', cookie)
   }
   if (req.url.startsWith(baseURL)) req.url = req.url.slice(baseURL.length)
+  if (req.url.match(/static\/js/)) req.url = req.url.match(/\/static\/js.*$/)[0]
 
   return serve(req, res, {
     public: uiPath,
