@@ -14,7 +14,7 @@
     "republish": "npx standard"
   },
   "dependencies": {
-    "serve-handler": "5.0.7"
+    "serve-handler": "6.1.1"
   },
   "files": [
     "src"
